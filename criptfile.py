@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 
 #Esta ferramenta serve para criptografar/decriptografar os ficheiros existentes no diretório, onde o ficheiro deste script se encontra!!
+#Testado no Sistema: Linux
 #Autor: TuciraTeam
 #Ano: 2022
 
