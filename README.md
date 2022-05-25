@@ -7,4 +7,6 @@ Esta ferramenta serve para criptografar/decriptografar os ficheiros existentes e
 
 Autor: TuciraTeam
 
+Testado no Sistema: Linux
+
 Ano: 2022
