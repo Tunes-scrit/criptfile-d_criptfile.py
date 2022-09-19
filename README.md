@@ -1,6 +1,6 @@
 # criptfile-d_criptfile.py
 
-Esta ferramenta serve para criptografar/descriptografar os ficheiros existentes em um diretório!!!
+Esta ferramenta serve para criptografar/descriptografar os ficheiros existentes em um diretório!
 
 Testado no Sistema: Linux
 
